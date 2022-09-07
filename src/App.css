@@ -1,41 +1,82 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* ========== NAVBAR STYLES =========== */
+.navbar {
+  width: 100%; 
+  height: 8vh;
+  background-color: #F55A5A;
+}
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 1rem;
+} 
+.navbar-container h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  padding-left: 10px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+/* ========== EVENTS STYLES ============ */ 
+.events-container {
+  width: 70vw; 
+  margin: 30px auto;  
+  box-shadow: 1px 1px 14px 0px rgba(0,0,0,0.1);
+  height: 100vh; 
+  overflow-y: scroll;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.events-card {
+  display: flex; 
+  flex-direction: row;
+  padding: 20px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.image-container {
+  margin: 20px;
+}
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.description-header {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+}
+.description-header img, .country, .view {
+  margin-left: 7px; 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.country {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 15px; 
+  text-transform: uppercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.view {
+  color: #918E9B;
+  text-decoration: underline; 
+  font-family: 'Inter'; 
+  font-size: 10px;
+  cursor: pointer;
 }
-
-.card {
-  padding: 2em;
+.location {
+  color: #2B283A;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
-
-.read-the-docs {
-  color: #888;
+.date {
+  font-weight: bold; 
+  font-size: 15px; 
+}
+.description {
+  font-family: 'Quicksand', sans-serif; 
+  font-weight: 500; 
+  font-size: 12px;
 }
