@@ -1,6 +1,6 @@
 # TRAVEL JOURNAL 
 
-- his is a simple example of a travel journal created in react 
+- This is a simple example of a travel journal created in react 
 - It is a practice on how to use props to pass data into a component. 
 --- 
 ## UI
